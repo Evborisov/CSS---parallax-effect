@@ -1,0 +1,133 @@
+
+
+html {
+    height: 100%;
+    overflow: hidden;
+   
+}
+
+body{
+    color: black;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+header{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+
+}
+
+header h1{
+    margin-top: -100px;
+    font-weight: bold;
+    color: rgb(16, 92, 163);
+    font-size: 7.5vh;
+    text-shadow: 2px 2px 8px rgb(15, 13, 13);
+   
+}
+
+header p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3vh;
+   
+}
+header, header:before
+{
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(../media/bg2.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+
+}
+
+.container{
+ 
+  padding-top: 50vh;
+  letter-spacing: 0.1em;
+  color: blanchedalmond;
+  background-color: rgb(110, 87, 87)
+  
+
+}
+
+.container .box
+{
+    width: 70vw;
+    margin: 5% auto;
+    display: table;
+    
+}
+.container .box .box-row{
+    display: table-row;
+}
+.container .box .box-row .box-cell{
+display: table-cell;
+width: 50% 
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    
+}
+li{
+    padding: 5px;
+       
+}
+.container h1, h2{
+    margin: 0
+}
+.container h1, h3{
+    text-shadow: 2px 2px 8px rgb(15, 13, 13);
+}
+a{
+    color: blue
+}
+/*
+.container h1{
+font-size: 6vw;
+}
+.container h2{
+font-size: 4vw
+}
+.container h3{
+font-size: 5vw
+}
+.container li{
+font-size: 3vw
+}
+*/
