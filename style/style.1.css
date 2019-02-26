@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+    overflow: hidden;
+    font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+h2 {
+    margin-bottom: 0;
+    color: red
+}
+
+.right p {
+    margin-top: 0
+}
+
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: calc(14px + (26 - 14) * ((100vw - 350px) / (1600 - 350)));
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100%;
+}
+
+header h1 {
+    color: rgb(16, 92, 163);
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    transform: translateY(190%)
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(../media/bg2.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    padding: 600px 0 100px 0;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px
+}
+
+.left {
+    width: 35%;
+}
+
+.right {
+    width: 50%
+}
+
+
+
+@media only screen and (max-width:800px) {
+    .right {
+        width: 70%
+    }
+
+    .left {
+        width: 20%
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    article {
+        flex-wrap: wrap
+    }
+
+    .left {
+        width: 100%;
+        text-align: center
+    }
+
+    .right {
+        width: 100%
+    }
+
+    .right h1,
+    h2,
+    p {
+        text-align: center
+    }
+}
